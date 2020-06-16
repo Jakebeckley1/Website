@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+}
+#header {
+  display: inline-block;
+  background-image: url("../Pics/header3.jpg");
+  background-size: 100%;
+  width: 100%;
+  height: 20vh;
+  margin: 0;
+  padding: 0;
+}
+#nav {
+  position: absolute;
+  top: 20vh;
+  width: 100%;
+  height: 7vh;
+  vertical-align: middle;
+  background-color: #202121;
+}
+.menuItem {
+  display: inline;
+  position: absolute;
+  height: 7vh;
+  line-height: 1vh;
+  width: 10vw;
+  text-align: center;
+  transition-duration: 1s;
+  background-color: #202121;
+}
+.menuItem:hover {
+  background-color: #404040;
+}
+.menuItem p {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: white;
+}
+@media only screen and (max-width: 1450px) {
+  .menuItem p {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .menuItem p {
+    font-size: 0.8rem;
+  }
+}
