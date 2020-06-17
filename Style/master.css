@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #F0EFEF;
 }
 #header {
   display: inline-block;
@@ -57,4 +58,154 @@ body {
   .menuItem p {
     font-size: 0.8rem;
   }
+}
+#mainPanel {
+  position: absolute;
+  height: 50vh;
+  width: 90vw;
+  left: 5vw;
+  top: 35vh;
+  /*border: 1px solid black;*/
+  border-radius: 2vw 2vw 2vw 2vw;
+}
+.subPanel {
+  position: absolute;
+  height: 50vh;
+  width: 30vw;
+  /*border-left: 1px solid black;
+  border-right: 1px solid black;*/
+}
+.bodyText {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  margin: 2vw;
+}
+.linkText {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+}
+.linkText a {
+  color: black;
+}
+.panelText {
+  position: absolute;
+  text-align: center;
+  top: 15vh;
+  height: 20vh;
+  width: 100%;
+  line-height: 5vh;
+}
+#imageFrame1 {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  left: 11vw;
+  background-image: url("../Pics/webdesign.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#imageFrame2 {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  left: 11vw;
+  background-image: url("../Pics/money.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#imageFrame3 {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  left: 11vw;
+  background-image: url("../Pics/mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#linkContainer {
+  position: absolute;
+  width: 90vw;
+  left: 5vw;
+  top: 70vh;
+}
+.link {
+  position: absolute;
+  width: 30vw;
+  text-align: center;
+}
+#hov1:hover a{
+  color: #404040;
+}
+#hov2:hover a{
+  color: #404040;
+}
+#hov3:hover a{
+  color: #404040;
+}
+a {
+  transition-duration: 1s;
+}
+#aboutPanel {
+  position: absolute;
+  width: 90vw;
+  height: 60vh;
+  top: 35vh;
+  left: 5vw;
+  margin-bottom: 8vh;
+  border: 1px solid black;
+}
+.aboutSubPanel {
+  position:absolute;
+  width: 45vw;
+  height: 60vh;
+  text-align: center;
+}
+#pricingTable {
+  position: absolute;
+  top: 35vh;
+  left: 5vw;
+  width: 90vw;
+  height: 50vh;
+  border: 1px solid black;
+  border-radius: 2vw 2vw 2vw 2vw;
+  background-color: #C0DDEC;
+}
+.Column {
+  width: 22.5vw;
+  position: absolute;
+  height: 100%;
+  border-right: 1px solid black;
+}
+.key {
+  position: absolute;
+  width: 22.5vw;
+  height: 16.6666vh;
+  border-bottom: 1px solid black;
+  text-align: center;
+  line-height: 10vh;
+}
+.package {
+  position: absolute;
+  width: 22.5vw;
+  height: 16.6666vh;
+  border-bottom: 1px solid black;
+  text-align: center;
+  line-height: 10vh;
+}
+.desc {
+  position: absolute;
+  top: 16.6666vh;
+  width: 22.5vw;
+  height: 16.6666vh;
+  border-bottom: 1px solid black;
+  text-align: center;
+  line-height: 4vh;
+}
+.price {
+  position: absolute;
+  top: 33.3333vh;
+  width: 22.5vw;
+  height: 16.6666vh;
+  text-align: center;
+  line-height: 10vh;
 }
