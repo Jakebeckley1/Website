@@ -10,6 +10,17 @@ body {
   margin: 0;
   padding: 0;
 }
+#logo {
+  position: absolute;
+  height: 7vw;
+  width: 7vw;
+  border-radius: 5vw 5vw 5vw 5vw;
+  background-image: url("../Pics/logo.jpg");
+  background-size: cover;
+  left: 2vw;
+  top: 3vh;
+  border: 1px solid black;
+}
 #nav {
   position: absolute;
   top: 20vh;
