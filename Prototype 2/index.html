@@ -35,38 +35,118 @@
 
     </div>
     <script>
-    // First slide display
-      $('#firstSlideBox').click(function(){
-        $(this).css({
-          "background-color":"#6F6F6F"
+      var currentSlide = 1;
+      // First slide display
+        $('#firstSlideBox').click(function(){
+          $(this).css({
+            "background-color":"#6F6F6F"
+          });
+          $('#secondSlideBox').css({
+            "background-color":"#BFBFBF"
+          });
+          $('#thirdSlideBox').css({
+            "background-color":"#BFBFBF"
+          });
+          $('#firstImage').fadeTo('slow',100);
+          $('#secondImage').fadeTo('slow',0);
+          $('#thirdImage').fadeTo('slow',0);
+          $('#firstText').text("Interactive, modern, and mobile-friendly websites with pricing options for any budget");
+          clearInterval(Timer);
+          currentSlide = 2;
+          Timer = setInterval(slideShowAlternate, 5000);
         });
-        $('#secondSlideBox').css({
-          "background-color":"#BFBFBF"
+      // Second slide display
+        $('#secondSlideBox').click(function(){
+          $(this).css({
+            "background-color":"#6F6F6F"
+          });
+          $('#firstSlideBox').css({
+            "background-color":"#BFBFBF"
+          });
+          $('#thirdSlideBox').css({
+            "background-color":"#BFBFBF"
+          });
+          $('#secondImage').fadeTo('slow',100);
+          $('#firstImage').fadeTo('slow',0);
+          $('#thirdImage').fadeTo('slow',0);
+          $('#firstText').text("Our web design team is based in Washington state and we have a discount for local businesses");
+          clearInterval(Timer);
+          currentSlide = 3;
+          Timer = setInterval(slideShowAlternate, 5000);
         });
-        $('#thirdSlideBox').css({
-          "background-color":"#BFBFBF"
+      // Third slide display
+        $('#thirdSlideBox').click(function(){
+          $(this).css({
+            "background-color":"#6F6F6F"
+          });
+          $('#firstSlideBox').css({
+            "background-color":"#BFBFBF"
+          });
+          $('#secondSlideBox').css({
+            "background-color":"#BFBFBF"
+          });
+          $('#thirdImage').fadeTo('slow',100);
+          $('#secondImage').fadeTo('slow',0);
+          $('#firstImage').fadeTo('slow',0);
+          $('#firstText').text("We will work with you to design a website to your specifications");
+          clearInterval(Timer);
+          currentSlide = 1;
+          Timer = setInterval(slideShowAlternate, 5000);
         });
-        $('#firstImage').fadeTo('slow',100);
-        $('#secondImage').fadeTo('slow',0);
-        $('#thirdImage').fadeTo('slow',0);
-        $('#firstText').text("Interactive, modern, and mobile-friendly websites with pricing options for any budget");
-      });
-    // Second slide display
-      $('#secondSlideBox').click(function(){
-        $(this).css({
-          "background-color":"#6F6F6F"
-        });
-        $('#firstSlideBox').css({
-          "background-color":"#BFBFBF"
-        });
-        $('#thirdSlideBox').css({
-          "background-color":"#BFBFBF"
-        });
-        $('#secondImage').fadeTo('slow',100);
-        $('#firstImage').fadeTo('slow',0);
-        $('#thirdImage').fadeTo('slow',0);
-        $('#firstText').text("Sample text sample text sample text for the second slide");
-      });
+        function slideShowAlternate() {
+          if(currentSlide == 1) {
+            $('#firstSlideBox').css({
+              "background-color":"#6F6F6F"
+            });
+            $('#secondSlideBox').css({
+              "background-color":"#BFBFBF"
+            });
+            $('#thirdSlideBox').css({
+              "background-color":"#BFBFBF"
+            });
+            $('#firstImage').fadeTo('slow',100);
+            $('#secondImage').fadeTo('slow',0);
+            $('#thirdImage').fadeTo('slow',0);
+            $('#firstText').text("Interactive, modern, and mobile-friendly websites with pricing options for any budget");
+          }
+          if(currentSlide == 2) {
+            $('#secondSlideBox').css({
+              "background-color":"#6F6F6F"
+            });
+            $('#firstSlideBox').css({
+              "background-color":"#BFBFBF"
+            });
+            $('#thirdSlideBox').css({
+              "background-color":"#BFBFBF"
+            });
+            $('#secondImage').fadeTo('slow',100);
+            $('#firstImage').fadeTo('slow',0);
+            $('#thirdImage').fadeTo('slow',0);
+            $('#firstText').text("Our web design team is based in Washington state and we have a discount for local businesses");
+          }
+          if(currentSlide == 3) {
+            $('#thirdSlideBox').css({
+              "background-color":"#6F6F6F"
+            });
+            $('#firstSlideBox').css({
+              "background-color":"#BFBFBF"
+            });
+            $('#secondSlideBox').css({
+              "background-color":"#BFBFBF"
+            });
+            $('#thirdImage').fadeTo('slow',100);
+            $('#secondImage').fadeTo('slow',0);
+            $('#firstImage').fadeTo('slow',0);
+            $('#firstText').text("We will work with you to design a website to your specifications");
+          }
+          currentSlide++
+          if(currentSlide == 4) {
+            currentSlide = 1;
+          }
+
+        }
+
+        var Timer = setInterval(slideShowAlternate, 5000);
     </script>
   </body>
 

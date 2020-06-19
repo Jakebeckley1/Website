@@ -42,7 +42,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url('../Pics/seattle.jpg');
+  background-image: url('../Pics/laptop.jpg');
   background-size: cover;
   background-position: 40% 30%;
   transition-duration: 800ms;
@@ -52,7 +52,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url('../Pics/laptop2.jpg');
+  background-image: url('../Pics/seattle.jpg');
   background-size: cover;
   background-position: 40% 30%;
   transition-duration: 800ms;
@@ -62,7 +62,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url('../Pics/laptop.jpg');
+  background-image: url('../Pics/laptop2.jpg');
   background-size: cover;
   background-position: 40% 30%;
   transition-duration: 800ms;
