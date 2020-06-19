@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+}
+#nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  box-shadow: 0vh 0.5vh 5px grey;
+}
+.navItem {
+  position: absolute;
+  height: 10vh;
+  line-height: 10vh;
+  width: 15vw;
+  text-align: center;
+  transition-duration: 800ms;
+}
+.navItem a {
+  font-family: 'Staatliches', cursive;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  transition-duration: 800ms;
+}
+.navItem:hover {
+  background-color: #E8E8E8;
+}
+.navItem:hover a {
+  font-size: 2rem;
+}
+#slideShowFirst {
+  position: absolute;
+  top: 10vh;
+  width: 100%;
+  height: 50vh;
+  /* background-image: url('../Pics/seattle.jpg'); */
+  background-size: cover;
+  background-position: 40% 30%;
+}
+#firstImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Pics/seattle.jpg');
+  background-size: cover;
+  background-position: 40% 30%;
+  transition-duration: 800ms;
+}
+#secondImage {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Pics/laptop2.jpg');
+  background-size: cover;
+  background-position: 40% 30%;
+  transition-duration: 800ms;
+}
+#thirdImage {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Pics/laptop.jpg');
+  background-size: cover;
+  background-position: 40% 30%;
+  transition-duration: 800ms;
+}
+.bodyText {
+  position: relative;
+  font-family: 'Staatliches', cursive;
+  font-size: 1.3rem;
+  background-color: #DFDFDF;
+  padding: 1vw;
+  border-radius: 1vw 1vw 1vw 1vw;
+  margin: 0;
+}
+#slideShowText {
+  position: absolute;
+  float: left;
+  clear: left;
+  left: 5vw;
+  top: 35vh;
+  max-width: 70vw;
+}
+#slideShowProgress {
+  background-color: #DFDFDF;
+  position: absolute;
+  top: 35vh;
+  right: 5vw;
+  height: calc(1.3rem + 2vw);
+  width: 12vw;
+  border-radius: 1vw 1vw 1vw 1vw;
+}
+#firstSlideBox {
+  position: absolute;
+  background-color: #6F6F6F;
+  top: calc(((1.3rem + 2vw) / 2) - 1vw);
+  width: 2vw;
+  height: 2vw;
+  left: 1.5vw;
+  border-radius: 1vw 1vw 1vw 1vw;
+  transition-duration: 800ms;
+}
+#secondSlideBox {
+  position: absolute;
+  background-color: #BFBFBF;
+  top: calc(((1.3rem + 2vw) / 2) - 1vw);
+  width: 2vw;
+  height: 2vw;
+  left: 5vw;
+  border-radius: 1vw 1vw 1vw 1vw;
+  transition-duration: 800ms;
+}
+#thirdSlideBox {
+  position: absolute;
+  background-color: #BFBFBF;
+  top: calc(((1.3rem + 2vw) / 2) - 1vw);
+  width: 2vw;
+  height: 2vw;
+  left: 8.5vw;
+  border-radius: 1vw 1vw 1vw 1vw;
+  transition-duration: 800ms;
+}
