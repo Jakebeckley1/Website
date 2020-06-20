@@ -35,6 +35,23 @@
       </div>
 
     </div>
+    <div id="mainPanel">
+      <div class="subPanel" style="border-radius: 2vw 0vw 0vw 2vw;">
+        <div class="textContainer">
+          <p class="heading">Featured Projects</p>
+        </div>
+      </div>
+      <div class="subPanel" style="left: 30vw;">
+        <div class="textContainer">
+          <p class="heading">Pricing Options</p>
+        </div>
+      </div>
+      <div class="subPanel" style="left: 60vw;border-radius: 0vw 2vw 2vw 0vw;">
+        <div class="textContainer">
+          <p class="heading">Contact Information</p>
+        </div>
+      </div>
+    </div>
     <script>
       var currentSlide = 1;
       // First slide display
@@ -54,7 +71,7 @@
           $('#firstText').text("Interactive, modern, and mobile-friendly websites with pricing options for any budget");
           clearInterval(Timer);
           currentSlide = 2;
-          Timer = setInterval(slideShowAlternate, 5000);
+          Timer = setInterval(slideShowAlternate, 6000);
         });
       // Second slide display
         $('#secondSlideBox').click(function(){
@@ -73,7 +90,7 @@
           $('#firstText').text("Our web design team is based in Washington state and we have a discount for local businesses");
           clearInterval(Timer);
           currentSlide = 3;
-          Timer = setInterval(slideShowAlternate, 5000);
+          Timer = setInterval(slideShowAlternate, 6000);
         });
       // Third slide display
         $('#thirdSlideBox').click(function(){
@@ -92,7 +109,7 @@
           $('#firstText').text("We will work with you to design a website to your specifications");
           clearInterval(Timer);
           currentSlide = 1;
-          Timer = setInterval(slideShowAlternate, 5000);
+          Timer = setInterval(slideShowAlternate, 6000);
         });
         function slideShowAlternate() {
           if(currentSlide == 1) {
@@ -147,7 +164,7 @@
 
         }
 
-        var Timer = setInterval(slideShowAlternate, 5000);
+        var Timer = setInterval(slideShowAlternate, 6000);
     </script>
   </body>
 
