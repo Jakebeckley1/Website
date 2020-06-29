@@ -13,12 +13,47 @@ body {
 }
 #logo {
   position: absolute;
-  right: 3vw;
-  width: 7vh;
-  height: 7vh;
-  top: 1.5vh;
+  width: 8vh;
+  height: 8vh;
+  top: 1vh;
+  right: calc(3vw - 0.5vh);
   border-radius: 2vw 2vw 2vw 2vw;
-  background-color: #1677D8;
+  background-image: url('../Pics/logo.png');
+  background-size: cover;
+  transition-duration: 1s;
+}
+#logo:hover {
+  cursor: pointer;
+}
+#logoTwo {
+  display: none;
+  position: absolute;
+  width: 8vh;
+  height: 8vh;
+  top: 1vh;
+  right: calc(3vw - 0.5vh);
+  border-radius: 2vw 2vw 2vw 2vw;
+  background-image: url('../Pics/logoTwo.png');
+  background-size: cover;
+  transition-duration: 1s;
+}
+#logoTwo:hover {
+  cursor: pointer;
+}
+#logoThree {
+  display: none;
+  position: absolute;
+  width: 8vh;
+  height: 8vh;
+  top: 1vh;
+  right: calc(3vw - 0.5vh);
+  border-radius: 2vw 2vw 2vw 2vw;
+  background-image: url('../Pics/logoThree.png');
+  background-size: cover;
+  transition-duration: 1s;
+}
+#logoThree:hover {
+  cursor: pointer;
 }
 .navItem {
   position: absolute;
@@ -151,7 +186,7 @@ body {
   top: 68vh;
   width: 90vw;
   left: 5vw;
-  height: 50vh;
+  height: 20vh;
   margin-bottom: 10vh;
 }
 .subPanel {
@@ -163,7 +198,7 @@ body {
   transition-duration: 1s;
 }
 .subPanel:hover {
-  background-color: #6E9CCB;
+  background-color: #86B6F7;
   cursor: pointer;
 }
 .textContainer {
@@ -171,9 +206,15 @@ body {
   top: 0;
   width: 100%;
   height: 20vh;
-  border-bottom: 1px solid black;
+  line-height: 10vh;
 }
 .heading {
   font-family: 'Staatliches', cursive;
   font-size: 2.8rem; /* Adjust for screen size */
+}
+.iconContainer {
+  position: absolute;
+  top: 20vh;
+  width: 100%;
+  height: 30vh;
 }
