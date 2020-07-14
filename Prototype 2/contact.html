@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Contact Us </title> <!-- Working title -->
+    <link rel="stylesheet" type="text/css" href="Style/master.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.color-2.2.0.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Pics/logo.png">
+  </head>
+
+  <body>
+    <!-- Navigation/Header -->
+    <div id="nav">
+      <div class="navItem" id="home"><a href="index.html">Home</a></div>
+      <div class="navItem" id="services" style="left: 15vw;"><a href="services.html">Services</a></div>
+      <div class="navItem" id="contact" style="left: 30vw;"><a href="contact.html">Contact</a></div>
+      <div class="navItem" id="showcase" style="left: 45vw;"><a href="showcase.html">Showcase</a></div>
+      <div id="logo"></div>
+      <div id="logoTwo"></div>
+      <div id="logoThree"></div>
+    </div>
+
+    <script>
+    // Navigation links
+      $('#home').click(function() {
+        window.location = 'index.html';
+      });
+      $('#services').click(function() {
+        window.location = 'services.html';
+      });
+      $('#contact').click(function() {
+        window.location = 'contact.html';
+      });
+      $('#showcase').click(function() {
+        window.location = 'showcase.html';
+      });
+
+    // Logo color changes
+      $('#logo').click(function() {
+        $(this).fadeTo('slow', 0);
+        $('#logoTwo').fadeTo('slow', 100);
+      });
+      $('#logoTwo').click(function() {
+        $(this).fadeTo('slow', 0);
+        $('#logoThree').fadeTo('slow', 100);
+      });
+      $('#logoThree').click(function() {
+        $(this).fadeTo('slow', 0);
+        $('#logo').fadeTo('slow', 100);
+      });
+    </script>
+  </body>
+</html>
