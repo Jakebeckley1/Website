@@ -21,6 +21,44 @@
       <div id="logoThree"></div>
     </div>
 
+    <div id="priceTable">
+      <div class="tablePanel" id="firstTable">
+        <div class="textPanel">
+          <p class="panelText">Basic</p>
+          <div class="lowerRise"></div>
+        </div>
+        <div class="lowerTextPanel">
+          <p class="lowerPanelText">4-6 webpages with text, images, and interactive design</p>
+        </div>
+        <div class="pricePanel">
+          <p class="priceText">$250.00</p>
+        </div>
+      </div>
+      <div class="tablePanel" id="secondTable">
+        <div class="textPanel">
+          <p class="panelText">Advanced</p>
+          <div class="lowerRise"></div>
+        </div>
+        <div class="lowerTextPanel">
+          <p class="lowerPanelText">10+ webpages with text, images, forms, and animations.</p>
+        </div>
+        <div class="pricePanel">
+          <p class="priceText">$350.00</p>
+        </div>
+      </div>
+      <div class="tablePanel" id="thirdTable">
+        <div class="textPanel">
+          <p class="panelText">Premium</p>
+          <div class="lowerRise"></div>
+        </div>
+        <div class="lowerTextPanel">
+          <p class="lowerPanelText">10+ webpages with text, images, forms, a login page, and mobile-friendly design</p>
+        </div>
+        <div class="pricePanel">
+          <p class="priceText">$450.00</p>
+        </div>
+      </div>
+    </div>
     <script>
     // Navigation links
       $('#home').click(function() {
@@ -48,15 +86,6 @@
       $('#logoThree').click(function() {
         $(this).fadeTo('slow', 0);
         $('#logo').fadeTo('slow', 100);
-      });
-      $('#projects').click(function() {
-        window.location = 'showcase.html';
-      });
-      $('#pricing').click(function() {
-        window.location = 'services.html';
-      });
-      $('#contactInfo').click(function() {
-        window.location = 'contact.html';
       });
     </script>
   </body>
