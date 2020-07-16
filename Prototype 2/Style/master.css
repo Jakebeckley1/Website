@@ -186,8 +186,9 @@ body {
   top: 68vh;
   width: 90vw;
   left: 5vw;
-  height: 20vh;
+  height: 25vh;
   margin-bottom: 10vh;
+  box-shadow: 0vh 0.2vh 1vh #4C4C4C;
 }
 .subPanel {
   position: absolute;
@@ -197,20 +198,33 @@ body {
   background-color: #DFDFDF;
   transition-duration: 1s;
 }
+#pricing {
+  box-shadow: 0vh 0.2vh 1vh #B2B2B2;
+  z-index:4;
+}
 .subPanel:hover {
-  background-color: #86B6F7;
+  z-index: 5;
   cursor: pointer;
+  box-shadow: 0vh 0.2vh 2vh #4C4C4C;
+  background-color: #A9C9DA;
+}
+.subPanel:hover p{
+  font-size: 3rem;
+}
+#pricing:hover {
+  box-shadow: 0vh 0.2vh 2vh #4C4C4C;
 }
 .textContainer {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 20vh;
-  line-height: 10vh;
+  height: 25vh;
+  line-height: 15vh;
 }
 .heading {
   font-family: 'Staatliches', cursive;
   font-size: 2.8rem; /* Adjust for screen size */
+  transition-duration: 1s;
 }
 .iconContainer {
   position: absolute;
@@ -314,4 +328,73 @@ body {
 .priceText {
   font-family: 'Staatliches', cursive;
   font-size: 2em;
+}
+#basicPanel {
+  opacity: 0;
+  position: absolute;
+  background-color: white;
+  width: 85vw;
+  left: 7.5vw;
+  height: 75vh;
+  top: 15vh;
+  box-shadow: 0vh 0.2vh 2vh #B2B2B2;
+  z-index: 2;
+}
+#basicHeader {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  top: 0;
+  text-align: center;
+  opacity: 0;
+  transition-duration: 1s;
+}
+#basicLower {
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  top: 30%;
+  height: 45%;
+  text-align: center;
+  opacity: 0;
+  transition-duration: 1s;
+  border-top: 1px solid black;
+  line-height: 8vh;
+}
+#basicButton {
+  position: absolute;
+  width: 30%;
+  left: 35%;
+  height: 15%;
+  top: 57vh;
+  background-color: #429DCE;
+  opacity: 0;
+  transition-duration: 1s;
+  box-shadow: 0vh 0vh 2vh #B2B2B2;
+  border-radius: 1vh 1vh 1vh 1vh;
+  text-align: center;
+  line-height: 2vh;
+}
+#basicButton:hover {
+  cursor: pointer;
+  background-color: #2886B9;
+  top: 55vh;
+  width: 35%;
+  left: 32.5%;
+  height: 20%;
+}
+#basicButton:hover p {
+  font-size: 3.2rem;
+}
+#basicText {
+  font-size: 2.4rem;
+  transition-duration:1s;
+}
+#bodyContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #A9C9DA;
+  display: none;
 }

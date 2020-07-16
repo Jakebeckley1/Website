@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="Pics/logo.png">
   </head>
 
-  <body>
+    <body style="background-color:#A9C9DA;">
     <!-- Navigation/Header -->
     <div id="nav">
       <div class="navItem" id="home"><a href="index.html">Home</a></div>
@@ -21,43 +21,58 @@
       <div id="logoThree"></div>
     </div>
 
-    <div id="priceTable">
-      <div class="tablePanel" id="firstTable">
-        <div class="textPanel">
-          <p class="panelText">Basic</p>
-          <div class="lowerRise"></div>
+
+      <div id="priceTable">
+        <div class="tablePanel" id="firstTable">
+          <div class="textPanel">
+            <p class="panelText">Basic</p>
+            <div class="lowerRise"></div>
+          </div>
+          <div class="lowerTextPanel">
+            <p class="lowerPanelText">4-6 webpages with text, images, and interactive design</p>
+          </div>
+          <div class="pricePanel">
+            <p class="priceText">$250.00</p>
+          </div>
         </div>
-        <div class="lowerTextPanel">
-          <p class="lowerPanelText">4-6 webpages with text, images, and interactive design</p>
+        <div class="tablePanel" id="secondTable">
+          <div class="textPanel">
+            <p class="panelText">Advanced</p>
+            <div class="lowerRise"></div>
+          </div>
+          <div class="lowerTextPanel">
+            <p class="lowerPanelText">10+ webpages with text, images, forms, and animations.</p>
+          </div>
+          <div class="pricePanel">
+            <p class="priceText">$350.00</p>
+          </div>
         </div>
-        <div class="pricePanel">
-          <p class="priceText">$250.00</p>
+        <div class="tablePanel" id="thirdTable">
+          <div class="textPanel">
+            <p class="panelText">Premium</p>
+            <div class="lowerRise"></div>
+          </div>
+          <div class="lowerTextPanel">
+            <p class="lowerPanelText">10+ webpages with text, images, forms, a login page, and mobile-friendly design</p>
+          </div>
+          <div class="pricePanel">
+            <p class="priceText">$450.00</p>
+          </div>
         </div>
       </div>
-      <div class="tablePanel" id="secondTable">
-        <div class="textPanel">
-          <p class="panelText">Advanced</p>
-          <div class="lowerRise"></div>
+      <div id="basicPanel">
+        <div id="basicHeader">
+          <p class="heading"> Basic Web Design Plan</p>
         </div>
-        <div class="lowerTextPanel">
-          <p class="lowerPanelText">10+ webpages with text, images, forms, and animations.</p>
+        <div id="basicLower">
+          <p class="priceText" style="font-size: 1.6rem"> For only $250, you can get a custom designed website with 4-6 pages and basic functionality.
+            A navigation, images, smooth and sleek design and transitions are all included and we will work with you to acheive the website of your dreams! </p>
         </div>
-        <div class="pricePanel">
-          <p class="priceText">$350.00</p>
-        </div>
-      </div>
-      <div class="tablePanel" id="thirdTable">
-        <div class="textPanel">
-          <p class="panelText">Premium</p>
-          <div class="lowerRise"></div>
-        </div>
-        <div class="lowerTextPanel">
-          <p class="lowerPanelText">10+ webpages with text, images, forms, a login page, and mobile-friendly design</p>
-        </div>
-        <div class="pricePanel">
-          <p class="priceText">$450.00</p>
+        <div id="basicButton">
+          <p class="priceText" id="basicText">Purchase now</p>
         </div>
       </div>
+    <div id="bodyContainer">
     </div>
     <script>
     // Navigation links
@@ -86,6 +101,46 @@
       $('#logoThree').click(function() {
         $(this).fadeTo('slow', 0);
         $('#logo').fadeTo('slow', 100);
+      });
+      // Price tables
+      $('#firstTable').click(function() {
+        $(this).css({
+          "transition-duration":"0s",
+          "display":"none"
+        });
+        $('#basicPanel').css({
+          "z-index":"5",
+          "opacity":"100"
+        });
+        $('#basicHeader').delay(400).css({
+          "opacity":"100"
+        });
+        setTimeout(function() {
+          $('#basicLower').css({
+            "opacity":"100"
+          });
+          $('#basicButton').css({
+            "opacity":"100"
+          });
+        }, 500);
+        $('#bodyContainer').css({
+          "display":"block"
+        });
+      });
+      $('#bodyContainer').click(function() {
+        $(this).css({
+          "display":"none"
+        });
+        $('#firstTable').css({
+          "display":"block",
+          "transition-duration":"1s"
+        });
+        $('#basicPanel').fadeTo('slow',0);
+        setTimeout(function() {
+          $('#basicPanel').css({
+            "z-index":"0"
+          });
+        }, 1000);
       });
     </script>
   </body>
